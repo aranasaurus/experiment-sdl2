@@ -1,0 +1,12 @@
+[
+{
+  "directory": "/Users/ryana/code/games/experiment-sdl2/build/Lesson0",
+  "command": "/usr/bin/c++     -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -I/Library/Frameworks/SDL.framework/Headers -I/Users/ryana/code/games/experiment-sdl2/include    -F/Library/Frameworks  -o CMakeFiles/Lesson0.dir/src/main.cpp.o -c /Users/ryana/code/games/experiment-sdl2/Lesson0/src/main.cpp",
+  "file": "/Users/ryana/code/games/experiment-sdl2/Lesson0/src/main.cpp"
+},
+{
+  "directory": "/Users/ryana/code/games/experiment-sdl2/build/src/Lesson1",
+  "command": "/usr/bin/c++     -Wall -Wextra -pedantic -std=c++11  -Wall -Wextra -pedantic -std=c++11 -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -I/Library/Frameworks/SDL.framework/Headers -I/Users/ryana/code/games/experiment-sdl2/include    -F/Library/Frameworks  -o CMakeFiles/Lesson1.dir/main.cpp.o -c /Users/ryana/code/games/experiment-sdl2/src/Lesson1/main.cpp",
+  "file": "/Users/ryana/code/games/experiment-sdl2/src/Lesson1/main.cpp"
+}
+]
