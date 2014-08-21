@@ -6,7 +6,6 @@
 
 template<typename T, typename... Args>
 void cleanup( T *t, Args&&... args ) {
-  std::cout << "here";
   cleanup( t );
   cleanup( std::forward<Args>(args)... );
 }
