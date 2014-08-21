@@ -99,10 +99,11 @@ int main() {
     SDL_RenderClear( ren );
     int bW, bH;
     SDL_QueryTexture( background, NULL, NULL, &bW, &bH );
-    renderTexture( background, ren, 0, 0 );
-    renderTexture( background, ren, bW, 0 );
-    renderTexture( background, ren, 0, bH );
-    renderTexture( background, ren, bW, bH );
+    for ( int y = 0; y < SCREEN_HEIGHT / bH; y++ ) {
+        for ( int x = 0; x < SCREEN_WIDTH; x++ ) {
+            renderTexture( background, ren, bW * x, bH * y );
+        }
+    }
 
     int iW, iH;
     SDL_QueryTexture( image, NULL, NULL, &iW, &iH );
