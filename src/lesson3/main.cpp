@@ -100,7 +100,7 @@ int main() {
         return 1;
     }
 
-    const string resPath = getResourcePath( "lesson2" );
+    const string resPath = getResourcePath( "lesson3" );
     SDL_Texture *background = loadTexture( resPath + "background.png", ren );
     SDL_Texture *image = loadTexture( resPath + "image.png", ren );
     if ( background == nullptr || image == nullptr ) {
@@ -110,11 +110,10 @@ int main() {
     }
 
     SDL_RenderClear( ren );
-    int bW, bH;
-    SDL_QueryTexture( background, NULL, NULL, &bW, &bH );
-    for ( int y = 0; y < SCREEN_HEIGHT / bH; y++ ) {
-        for ( int x = 0; x < SCREEN_WIDTH; x++ ) {
-            renderTexture( background, ren, bW * x, bH * y );
+
+    for ( int y = 0; y < SCREEN_HEIGHT; y += TILE_SIZE ) {
+        for ( int x = 0; x < SCREEN_WIDTH; x += TILE_SIZE ) {
+            renderTexture( background, ren, x, y, TILE_SIZE, TILE_SIZE );
         }
     }
 
